@@ -7,6 +7,25 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
+protocol PhotosViewModel: class {
+    // Input
+    var viewDidLoad: PublishRelay<Void> { get }
+    var willDisplayCellAtIndex: PublishRelay<Int> { get }
+    var didEndDisplayingCellAtIndex: PublishRelay<Int> { get }
+    var didChoosePhotoWithId: PublishRelay<String> { get }
+    var didScrollToTheBottom: PublishRelay<Void> { get }
+    
+    // Output
+    var isLoadingFirstPage: BehaviorRelay<Bool> { get }
+    var isLoadingAdditionalPhotos: BehaviorRelay<Bool> { get }
+    var unsplashPhotos: BehaviorRelay<[UnsplashPhoto]> { get }
+    var imageRetrievedSuccess: PublishRelay<(UIImage, Int)> { get }
+    var imageRetrievedError: PublishRelay<Int> { get }
+}
+
 
 class PhotosViewModelImplementation {
     

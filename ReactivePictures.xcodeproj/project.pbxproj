@@ -15,6 +15,9 @@
 		994FAA2C24869A1F00024BBF /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA2A24869A1F00024BBF /* PhotosViewController.swift */; };
 		994FAA2D24869A1F00024BBF /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994FAA2B24869A1F00024BBF /* PhotosViewController.xib */; };
 		994FAA2F24869BBD00024BBF /* PhotosViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA2E24869BBD00024BBF /* PhotosViewModelImplementation.swift */; };
+		994FAA312486D09700024BBF /* UnsplashPhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA302486D09700024BBF /* UnsplashPhotosService.swift */; };
+		994FAA332486D0D000024BBF /* DataLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA322486D0D000024BBF /* DataLoadingService.swift */; };
+		994FAA352486D0E900024BBF /* DataToImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA342486D0E900024BBF /* DataToImageService.swift */; };
 		99CFDF512486836B0016244A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF502486836B0016244A /* AppDelegate.swift */; };
 		99CFDF532486836B0016244A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF522486836B0016244A /* SceneDelegate.swift */; };
 		99CFDF5A2486836E0016244A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CFDF592486836E0016244A /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		994FAA2A24869A1F00024BBF /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		994FAA2B24869A1F00024BBF /* PhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		994FAA2E24869BBD00024BBF /* PhotosViewModelImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModelImplementation.swift; sourceTree = "<group>"; };
+		994FAA302486D09700024BBF /* UnsplashPhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhotosService.swift; sourceTree = "<group>"; };
+		994FAA322486D0D000024BBF /* DataLoadingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingService.swift; sourceTree = "<group>"; };
+		994FAA342486D0E900024BBF /* DataToImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataToImageService.swift; sourceTree = "<group>"; };
 		99CFDF4D2486836B0016244A /* ReactivePictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivePictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CFDF502486836B0016244A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99CFDF522486836B0016244A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +209,9 @@
 		994FAA2024868C7D00024BBF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				994FAA302486D09700024BBF /* UnsplashPhotosService.swift */,
+				994FAA322486D0D000024BBF /* DataLoadingService.swift */,
+				994FAA342486D0E900024BBF /* DataToImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -468,7 +477,10 @@
 			files = (
 				99CFDF512486836B0016244A /* AppDelegate.swift in Sources */,
 				994FAA132486857800024BBF /* AppCoordinator.swift in Sources */,
+				994FAA352486D0E900024BBF /* DataToImageService.swift in Sources */,
+				994FAA312486D09700024BBF /* UnsplashPhotosService.swift in Sources */,
 				994FAA272486970A00024BBF /* Coordinator.swift in Sources */,
+				994FAA332486D0D000024BBF /* DataLoadingService.swift in Sources */,
 				994FAA102486851E00024BBF /* APIKeys.swift in Sources */,
 				994FAA2C24869A1F00024BBF /* PhotosViewController.swift in Sources */,
 				994FAA2F24869BBD00024BBF /* PhotosViewModelImplementation.swift in Sources */,
