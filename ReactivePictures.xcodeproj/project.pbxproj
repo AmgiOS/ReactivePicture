@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70360950E569AE0E20ECE098 /* Pods_ReactivePicturesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFD09A370CD10828B011290 /* Pods_ReactivePicturesTests.framework */; };
 		994FAA102486851E00024BBF /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA0F2486851E00024BBF /* APIKeys.swift */; };
 		994FAA132486857800024BBF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA122486857800024BBF /* AppCoordinator.swift */; };
 		994FAA272486970A00024BBF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA262486970A00024BBF /* Coordinator.swift */; };
@@ -19,6 +20,7 @@
 		99CFDF5A2486836E0016244A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CFDF592486836E0016244A /* Assets.xcassets */; };
 		99CFDF5D2486836E0016244A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CFDF5B2486836E0016244A /* LaunchScreen.storyboard */; };
 		99CFDF682486836F0016244A /* ReactivePicturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF672486836F0016244A /* ReactivePicturesTests.swift */; };
+		AD755C33607184F767A22898 /* Pods_ReactivePictures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE8AC511E2DF6FECB4950A8 /* Pods_ReactivePictures.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17CD4B1BBB0325010C36A630 /* Pods-ReactivePictures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivePictures.debug.xcconfig"; path = "Target Support Files/Pods-ReactivePictures/Pods-ReactivePictures.debug.xcconfig"; sourceTree = "<group>"; };
+		336BCD33540A58C53C50C799 /* Pods-ReactivePicturesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivePicturesTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactivePicturesTests/Pods-ReactivePicturesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AE8AC511E2DF6FECB4950A8 /* Pods_ReactivePictures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactivePictures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		994FAA0F2486851E00024BBF /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		994FAA122486857800024BBF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		994FAA262486970A00024BBF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		99CFDF632486836F0016244A /* ReactivePicturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactivePicturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CFDF672486836F0016244A /* ReactivePicturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactivePicturesTests.swift; sourceTree = "<group>"; };
 		99CFDF692486836F0016244A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99AA2FD01A1CEC4BE641A17 /* Pods-ReactivePictures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivePictures.release.xcconfig"; path = "Target Support Files/Pods-ReactivePictures/Pods-ReactivePictures.release.xcconfig"; sourceTree = "<group>"; };
+		EEFD09A370CD10828B011290 /* Pods_ReactivePicturesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactivePicturesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC2C8EC53D5CA9DD1985D1E /* Pods-ReactivePicturesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivePicturesTests.release.xcconfig"; path = "Target Support Files/Pods-ReactivePicturesTests/Pods-ReactivePicturesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD755C33607184F767A22898 /* Pods_ReactivePictures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,19 +71,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70360950E569AE0E20ECE098 /* Pods_ReactivePicturesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		726058484D1060A681BD81F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17CD4B1BBB0325010C36A630 /* Pods-ReactivePictures.debug.xcconfig */,
+				C99AA2FD01A1CEC4BE641A17 /* Pods-ReactivePictures.release.xcconfig */,
+				336BCD33540A58C53C50C799 /* Pods-ReactivePicturesTests.debug.xcconfig */,
+				FEC2C8EC53D5CA9DD1985D1E /* Pods-ReactivePicturesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		994FAA112486855A00024BBF /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
 				99CFDF502486836B0016244A /* AppDelegate.swift */,
 				99CFDF522486836B0016244A /* SceneDelegate.swift */,
 				994FAA122486857800024BBF /* AppCoordinator.swift */,
-				994FAA262486970A00024BBF /* Coordinator.swift */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -100,6 +120,7 @@
 		994FAA16248685B300024BBF /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				994FAA262486970A00024BBF /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -234,6 +255,8 @@
 				99CFDF4F2486836B0016244A /* ReactivePictures */,
 				99CFDF662486836F0016244A /* ReactivePicturesTests */,
 				99CFDF4E2486836B0016244A /* Products */,
+				726058484D1060A681BD81F7 /* Pods */,
+				CE6CC5FD27EFDE3496BD4189 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +289,15 @@
 			path = ReactivePicturesTests;
 			sourceTree = "<group>";
 		};
+		CE6CC5FD27EFDE3496BD4189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AE8AC511E2DF6FECB4950A8 /* Pods_ReactivePictures.framework */,
+				EEFD09A370CD10828B011290 /* Pods_ReactivePicturesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,9 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99CFDF6C2486836F0016244A /* Build configuration list for PBXNativeTarget "ReactivePictures" */;
 			buildPhases = (
+				9FB7C994AD66E9B05ABFDD16 /* [CP] Check Pods Manifest.lock */,
 				99CFDF492486836B0016244A /* Sources */,
 				99CFDF4A2486836B0016244A /* Frameworks */,
 				99CFDF4B2486836B0016244A /* Resources */,
+				4CF03A184495E1CDB523CB54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99CFDF6F2486836F0016244A /* Build configuration list for PBXNativeTarget "ReactivePicturesTests" */;
 			buildPhases = (
+				9D28E71F2F68CEF81AAE9E58 /* [CP] Check Pods Manifest.lock */,
 				99CFDF5F2486836F0016244A /* Sources */,
 				99CFDF602486836F0016244A /* Frameworks */,
 				99CFDF612486836F0016244A /* Resources */,
@@ -361,6 +396,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CF03A184495E1CDB523CB54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactivePictures/Pods-ReactivePictures-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactivePictures/Pods-ReactivePictures-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactivePictures/Pods-ReactivePictures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D28E71F2F68CEF81AAE9E58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactivePicturesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB7C994AD66E9B05ABFDD16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactivePictures-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99CFDF492486836B0016244A /* Sources */ = {
@@ -524,6 +623,7 @@
 		};
 		99CFDF6D2486836F0016244A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17CD4B1BBB0325010C36A630 /* Pods-ReactivePictures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +643,7 @@
 		};
 		99CFDF6E2486836F0016244A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99AA2FD01A1CEC4BE641A17 /* Pods-ReactivePictures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +663,7 @@
 		};
 		99CFDF702486836F0016244A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336BCD33540A58C53C50C799 /* Pods-ReactivePicturesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +686,7 @@
 		};
 		99CFDF712486836F0016244A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC2C8EC53D5CA9DD1985D1E /* Pods-ReactivePicturesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
