@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		994FAA102486851E00024BBF /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA0F2486851E00024BBF /* APIKeys.swift */; };
 		994FAA132486857800024BBF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA122486857800024BBF /* AppCoordinator.swift */; };
+		994FAA272486970A00024BBF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA262486970A00024BBF /* Coordinator.swift */; };
+		994FAA292486976F00024BBF /* PhotosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA282486976F00024BBF /* PhotosCoordinator.swift */; };
+		994FAA2C24869A1F00024BBF /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA2A24869A1F00024BBF /* PhotosViewController.swift */; };
+		994FAA2D24869A1F00024BBF /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994FAA2B24869A1F00024BBF /* PhotosViewController.xib */; };
+		994FAA2F24869BBD00024BBF /* PhotosViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994FAA2E24869BBD00024BBF /* PhotosViewModelImplementation.swift */; };
 		99CFDF512486836B0016244A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF502486836B0016244A /* AppDelegate.swift */; };
 		99CFDF532486836B0016244A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF522486836B0016244A /* SceneDelegate.swift */; };
 		99CFDF5A2486836E0016244A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CFDF592486836E0016244A /* Assets.xcassets */; };
@@ -29,6 +34,11 @@
 /* Begin PBXFileReference section */
 		994FAA0F2486851E00024BBF /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		994FAA122486857800024BBF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		994FAA262486970A00024BBF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		994FAA282486976F00024BBF /* PhotosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCoordinator.swift; sourceTree = "<group>"; };
+		994FAA2A24869A1F00024BBF /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		994FAA2B24869A1F00024BBF /* PhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		994FAA2E24869BBD00024BBF /* PhotosViewModelImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModelImplementation.swift; sourceTree = "<group>"; };
 		99CFDF4D2486836B0016244A /* ReactivePictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivePictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CFDF502486836B0016244A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99CFDF522486836B0016244A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +71,10 @@
 		994FAA112486855A00024BBF /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				99CFDF522486836B0016244A /* SceneDelegate.swift */,
 				99CFDF502486836B0016244A /* AppDelegate.swift */,
+				99CFDF522486836B0016244A /* SceneDelegate.swift */,
 				994FAA122486857800024BBF /* AppCoordinator.swift */,
+				994FAA262486970A00024BBF /* Coordinator.swift */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 		994FAA1A24868C4000024BBF /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				994FAA282486976F00024BBF /* PhotosCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -132,6 +144,7 @@
 		994FAA1B24868C4A00024BBF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				994FAA2E24869BBD00024BBF /* PhotosViewModelImplementation.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -139,6 +152,8 @@
 		994FAA1C24868C4F00024BBF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				994FAA2A24869A1F00024BBF /* PhotosViewController.swift */,
+				994FAA2B24869A1F00024BBF /* PhotosViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994FAA2D24869A1F00024BBF /* PhotosViewController.xib in Resources */,
 				99CFDF5D2486836E0016244A /* LaunchScreen.storyboard in Resources */,
 				99CFDF5A2486836E0016244A /* Assets.xcassets in Resources */,
 			);
@@ -353,8 +369,12 @@
 			files = (
 				99CFDF512486836B0016244A /* AppDelegate.swift in Sources */,
 				994FAA132486857800024BBF /* AppCoordinator.swift in Sources */,
+				994FAA272486970A00024BBF /* Coordinator.swift in Sources */,
 				994FAA102486851E00024BBF /* APIKeys.swift in Sources */,
+				994FAA2C24869A1F00024BBF /* PhotosViewController.swift in Sources */,
+				994FAA2F24869BBD00024BBF /* PhotosViewModelImplementation.swift in Sources */,
 				99CFDF532486836B0016244A /* SceneDelegate.swift in Sources */,
+				994FAA292486976F00024BBF /* PhotosCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -492,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -509,6 +529,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8N8P57QSQ;
 				INFOPLIST_FILE = "$(SRCROOT)/ReactivePictures/CoreLayer/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +548,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8N8P57QSQ;
 				INFOPLIST_FILE = "$(SRCROOT)/ReactivePictures/CoreLayer/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
