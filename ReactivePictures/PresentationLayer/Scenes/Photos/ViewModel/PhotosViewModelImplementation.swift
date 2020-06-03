@@ -68,7 +68,7 @@ final class PhotosViewModelImplementation: PhotosViewModel {
         self.coordinator = coordinator
         
         bindOnViewDidLoad()
-//        bindOnWillDisplayCell()
+        bindOnWillDisplayCell()
         bindOnDidEndDisplayingCell()
         bindOnDidScrollToBottom()
         bindPageNumber()
@@ -87,49 +87,49 @@ final class PhotosViewModelImplementation: PhotosViewModel {
             .disposed(by: disposeBag)
     }
     
-//    private func bindOnWillDisplayCell() {
-//        willDisplayCellAtIndex
-//            .customDebug(identifier: "willDisplayCellAtIndex")
-//            .filter({ [unowned self] index in
-//                self.unsplashPhotos.value.indices.contains(index)
-//            })
-//            .map { [unowned self] index in
-//                (index, self.unsplashPhotos.value[index])
-//            }
-//            .compactMap({ [weak self] (index, photo) in
-//                guard let urlString = photo.urls?.regular else {
-//                    DispatchQueue.main.async {
-//                        self?.imageRetrievedError.accept(index)
-//                    }
-//                    return nil
-//                }
-//                return (index, urlString)
-//            })
-//            .flatMap({ [unowned self] (index, urlString) in
-//                self.photoLoadingService
-//                    .loadData(at: index, for: urlString)
-//                    .observeOn(
-//                        ConcurrentDispatchQueueScheduler(qos: .background)
-//                    )
-//                    .concatMap { (data, error) in
-//                        Observable.of((index, data, error))
-//                    }
-//            })
-//            .subscribe(onNext: { [weak self] (index, data, error) in
-//                guard let self = self else { return }
-//
-//                guard let imageData = data,
-//                    let image = self.dataToImageService
-//                        .getImage(from: imageData) else {
-//                    self.imageRetrievedError.accept(index)
-//                    return
-//                }
-//
-//                 self.imageRetrievedSuccess
-//                    .accept((image, index))
-//            })
-//            .disposed(by: disposeBag)
-//    }
+    private func bindOnWillDisplayCell() {
+        willDisplayCellAtIndex
+            .debug("willDisplayCellAtIndex", trimOutput: false)
+            .filter({ [unowned self] index in
+                self.unsplashPhotos.value.indices.contains(index)
+            })
+            .map { [unowned self] index in
+                (index, self.unsplashPhotos.value[index])
+            }
+            .compactMap({ [weak self] (index, photo) in
+                guard let urlString = photo.urls?.regular else {
+                    DispatchQueue.main.async {
+                        self?.imageRetrievedError.accept(index)
+                    }
+                    return nil
+                }
+                return (index, urlString)
+            })
+            .flatMap({ [unowned self] (index, urlString) in
+                self.photoLoadingService
+                    .loadData(at: index, for: urlString)
+                    .observeOn(
+                        ConcurrentDispatchQueueScheduler(qos: .background)
+                    )
+                    .concatMap { (data, error) in
+                        Observable.of((index, data, error))
+                    }
+            })
+            .subscribe(onNext: { [weak self] (index, data, error) in
+                guard let self = self else { return }
+
+                guard let imageData = data,
+                    let image = self.dataToImageService
+                        .getImage(from: imageData) else {
+                    self.imageRetrievedError.accept(index)
+                    return
+                }
+
+                 self.imageRetrievedSuccess
+                    .accept((image, index))
+            })
+            .disposed(by: disposeBag)
+    }
     
     private func bindOnDidEndDisplayingCell() {
         didEndDisplayingCellAtIndex
