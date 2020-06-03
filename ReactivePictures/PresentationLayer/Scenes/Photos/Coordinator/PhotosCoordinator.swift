@@ -41,6 +41,8 @@ class PhotosCoordinatorImplementation: Coordinator {
 // MARK: - PhotosCoordinator
 extension PhotosCoordinatorImplementation: PhotosCoordinator {
     func pushToDetailPhoto(with photoId: String) {
-        
+        let photoDetailCoordinator = PhotoDetailCoordinatorImplementation(navigationController: navigationController,
+                                                                 photoId: photoId)
+        coordinate(to: photoDetailCoordinator)
     }
 }
