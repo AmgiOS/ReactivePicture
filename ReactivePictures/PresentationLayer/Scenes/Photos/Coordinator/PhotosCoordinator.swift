@@ -27,7 +27,12 @@ class PhotosCoordinatorImplementation: Coordinator {
     }
     
     func start() {
-        let photosViewController = PhotosViewController(photosViewModel: PhotosViewModelImplementation())
+        let viewModel = PhotosViewModelImplementation(photosService: UnsplashPhotosServiceImplementation(),
+                                                      photoLoadingService: DataLoadingServiceImplementation(),
+                                                      dataToImageService: DataToImageConversionServiceImplementation(),
+                                                      coordinator: self)
+        
+        let photosViewController = PhotosViewController(photosViewModel: viewModel)
         navigationController.pushViewController(photosViewController, animated: true)
     }
     

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct UnsplashEndpoints {
+    static let getPhotos = "/photos"
+    static let getRandomPhotos = "/photos/random"
+    static let getPhotoById = "/photos/"
+}

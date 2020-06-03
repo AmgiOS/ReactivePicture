@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct BaseURLs {
+    static let unsplash = "https://api.unsplash.com/"
+}

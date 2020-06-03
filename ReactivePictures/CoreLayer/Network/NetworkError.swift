@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+enum NetworkError: Error {
+    case invalidURL
+    case decodingFailed
+    case unknown
+}
