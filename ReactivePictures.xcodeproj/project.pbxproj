@@ -24,6 +24,7 @@
 		99AFE69C2487D3A8002F9868 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AFE69B2487D3A8002F9868 /* NetworkClient.swift */; };
 		99AFE69E2487D531002F9868 /* UnsplashEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AFE69D2487D531002F9868 /* UnsplashEndpoints.swift */; };
 		99AFE6A02487D752002F9868 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AFE69F2487D752002F9868 /* Dimensions.swift */; };
+		99AFE6A32487DF3E002F9868 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AFE6A22487DF3E002F9868 /* PhotoCell.swift */; };
 		99CFDF512486836B0016244A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF502486836B0016244A /* AppDelegate.swift */; };
 		99CFDF532486836B0016244A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CFDF522486836B0016244A /* SceneDelegate.swift */; };
 		99CFDF5A2486836E0016244A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CFDF592486836E0016244A /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		99AFE69B2487D3A8002F9868 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		99AFE69D2487D531002F9868 /* UnsplashEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashEndpoints.swift; sourceTree = "<group>"; };
 		99AFE69F2487D752002F9868 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
+		99AFE6A22487DF3E002F9868 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		99CFDF4D2486836B0016244A /* ReactivePictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivePictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CFDF502486836B0016244A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99CFDF522486836B0016244A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		994FAA1C24868C4F00024BBF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				99AFE6A12487DF31002F9868 /* Cell */,
 				994FAA2A24869A1F00024BBF /* PhotosViewController.swift */,
 				994FAA2B24869A1F00024BBF /* PhotosViewController.xib */,
 			);
@@ -281,6 +284,14 @@
 				99CFDF5B2486836E0016244A /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		99AFE6A12487DF31002F9868 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				99AFE6A22487DF3E002F9868 /* PhotoCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		99CFDF442486836B0016244A = {
@@ -511,6 +522,7 @@
 				994FAA312486D09700024BBF /* UnsplashPhotosService.swift in Sources */,
 				994FAA272486970A00024BBF /* Coordinator.swift in Sources */,
 				994FAA332486D0D000024BBF /* DataLoadingService.swift in Sources */,
+				99AFE6A32487DF3E002F9868 /* PhotoCell.swift in Sources */,
 				994FAA102486851E00024BBF /* APIKeys.swift in Sources */,
 				994FAA2C24869A1F00024BBF /* PhotosViewController.swift in Sources */,
 				994FAA2F24869BBD00024BBF /* PhotosViewModelImplementation.swift in Sources */,

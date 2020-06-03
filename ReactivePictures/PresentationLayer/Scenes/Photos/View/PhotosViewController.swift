@@ -18,11 +18,12 @@ class PhotosViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private var cachedImages: [Int: UIImage] = [:]
     private var bottomConstraint: NSLayoutConstraint?
+    private let photoId = "photoCell"
     
     private lazy var photosCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout())
         collectionView.backgroundColor = .white
-        collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: PhotoCell.reuseIdentifier)
+        collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: photoId)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
@@ -70,7 +71,7 @@ extension PhotosViewController {
         /// Bind unsplash photos to the collection view items
         photosViewModel.unsplashPhotos
             .bind(to: photosCollectionView.rx.items(
-                cellIdentifier: PhotoCell.reuseIdentifier,
+                cellIdentifier: photoId,
                 cellType: PhotoCell.self)) { _, _, _ in }
             .disposed(by: disposeBag)
         
@@ -87,7 +88,7 @@ extension PhotosViewController {
                     cell.imageView.image = cachedImage
                 } else {
                     cell.activityIndicator.startAnimating()
-                    self?.viewModel
+                    self?.photosViewModel
                         .willDisplayCellAtIndex
                         .accept(index)
                 }
