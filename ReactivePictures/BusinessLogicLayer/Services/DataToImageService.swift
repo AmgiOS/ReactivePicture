@@ -6,8 +6,15 @@
 //  Copyright © 2020 Amg-Gauthier. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class DataToImageService {
+protocol DataToImageConversionService: class {
+    func getImage(from data: Data) -> UIImage?
+}
+
+class DataToImageConversionServiceImplementation: DataToImageConversionService {
     
+    func getImage(from data: Data) -> UIImage? {
+        return UIImage(data: data)
+    }
 }
